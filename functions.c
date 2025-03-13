@@ -29,8 +29,23 @@ void printAlt(char name[]) {
 
 void printAlt3(char name[]) {
 	int i = 0;
-	while (name[i]) {
+	while (i<=name[i]) {
 		printf("%c", name[i]);
 		i += 3;
 	}
+}
+
+//Q4
+
+void acceptScnf(char arr2[]) {
+	printf("\nEnter String Using scanf_s() : ");
+
+	scanf_s("%[^\n]s",arr2,20);
+}
+
+void displayPrintf(char arr2[]) {
+	printf("\nDisplayed String Using printf() : ");
+	int i = 0;
+	while (arr2[i])
+		printf("%c",arr2[i++]);
 }

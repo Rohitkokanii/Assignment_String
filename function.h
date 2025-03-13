@@ -12,3 +12,9 @@ void printAlt(char name[]);
 //Q3
 
 void printAlt3(char name[]);
+
+//Q4
+
+void acceptScnf(char arr2[]);
+
+void displayPrintf(char arr2[]);
