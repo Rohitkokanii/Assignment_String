@@ -49,3 +49,18 @@ void displayPrintf(char arr2[]) {
 	while (arr2[i])
 		printf("%c",arr2[i++]);
 }
+
+//Q5
+
+void copyString(char ch2[], char ch1[]) {
+
+	int i = 0;
+	while (ch1[i]) 
+		i++;
+	
+	int j = 0;
+	while(j<=i){
+		ch2[j] = ch1[j];
+	j++;
+	}
+}
