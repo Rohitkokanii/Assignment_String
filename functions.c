@@ -64,3 +64,51 @@ void copyString(char ch2[], char ch1[]) {
 	j++;
 	}
 }
+
+
+//Q6
+
+void reverseString(char ch[]) {
+
+	int i = 0;
+
+	while (ch[i])
+		i++;
+
+	for (int j = 0; j < i / 2;j++) {
+		int temp = ch[j];
+		ch[j] = ch[i - 1 - j];
+		ch[i - 1 - j] = temp;
+	}
+
+}
+
+//Q7
+
+void checkPalindrome(char copyCh[], char ch[]) {
+
+	if (copyCh == ch) {
+		printf("\n%s is Palindrom ", copyCh);
+	}
+	else {
+		printf("\n%s is not Palindrom \n", copyCh);
+	}
+}
+
+//Q8
+
+void concat(char str1[], char str2[]) {
+
+	int i = 0;
+	while (str1[i])
+		i++;
+
+	int j = 0;
+
+	while (str2[j]) {
+		str1[i] = str2[j];
+		j++;
+		i++;
+	}
+	str1[i] = str2[j];
+}

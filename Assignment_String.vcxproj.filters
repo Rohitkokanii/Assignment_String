@@ -33,6 +33,15 @@
     <ClCompile Include="Q5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Q6.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="function.h">
