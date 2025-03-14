@@ -167,3 +167,74 @@ int countWord(char str[]) {
 
 //Q12
 
+int countSent(char str[]) {
+
+
+	int i = 0;
+	int countSent = 0;
+	while (str[i]) {
+
+		if (str[i] == 46) {
+			countSent++;
+		}
+		i++;
+	}
+
+	return countSent;
+}
+
+//Q13
+
+void charFreq(char str[]) {
+
+	int i = 0;
+
+
+	char visited = '-';
+	while (str[i]) {
+		int count = 0;
+		int j = 0;
+		if (visited == str[i]) {
+			i++;
+			continue;
+		}
+		while (str[j]) {
+
+			if (str[i] == str[j]) {
+				visited = str[i];
+				count++;
+			}
+			j++;
+		}
+		printf("\n%c Occured %d times\n", str[i], count);
+		i++;
+	}
+}
+
+//Q14
+
+void countVowels(char str[]) {
+
+	int i = 0,j=0;
+	int count = 0;
+	char countOcc[SIZE];
+	while (str[i]) {
+
+		if (str[i] == 'A' || str[i] == 'a' ||
+			str[i] == 'E' || str[i] == 'e' ||
+			str[i] == 'I' || str[i] == 'i' ||
+			str[i] == 'O' || str[i] == 'o' ||
+			str[i] == 'U' || str[i] == 'u' ) {
+
+			countOcc[j] = str[i];
+			j++;
+			count++;
+		}
+
+		i++;
+	}
+	printf("\n %d vowels\n",count);
+	countOcc[j] = '\0';
+	charFreq(countOcc);
+
+}

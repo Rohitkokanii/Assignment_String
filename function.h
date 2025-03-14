@@ -46,3 +46,15 @@ void countChar(char str[]);
 //Q11
 
 int countWord(char str[]);
+
+//Q12
+
+int countSent(char str[]);
+
+//Q13
+
+void charFreq(char str[]);
+
+//Q14
+
+void countVowels(char str[]);
