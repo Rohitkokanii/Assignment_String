@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-#define SIZE 30
+#define SIZE 100
 
 void input(char[]);
 void display(char[]);
@@ -38,3 +38,11 @@ void concat(char str1[], char str2[]);
 //Q9
 
 int strComp(char str1[], char str2[]);
+
+//10
+
+void countChar(char str[]);
+
+//Q11
+
+int countWord(char str[]);

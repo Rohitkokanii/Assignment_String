@@ -45,6 +45,15 @@
     <ClCompile Include="Q9.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Q10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q11.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="function.h">

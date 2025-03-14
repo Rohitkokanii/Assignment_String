@@ -137,3 +137,33 @@ int strComp(char str1[], char str2[]) {
 		}
 	}
 }
+
+//Q10
+
+void countChar(char str[]) {
+
+	int i = 0;
+
+	while (str[i])
+		i++;
+
+	printf("\n\"%s\" have %d Character \n",str,i);
+}
+
+//Q11
+
+int countWord(char str[]) {
+
+	int i = 0;
+	int countSpace = 1;
+	while (str[i]) {
+		if (str[i] == 32 &&str[i+1]>0) {
+			countSpace++;
+		}
+		i++;
+	}
+	return countSpace;
+}
+
+//Q12
+
