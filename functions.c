@@ -190,17 +190,20 @@ void charFreq(char str[]) {
 	int i = 0;
 
 
-	char visited = '-';
+	char visited = -1;
 	while (str[i]) {
 		int count = 0;
 		int j = 0;
+
 		if (visited == str[i]) {
 			i++;
 			continue;
 		}
+
 		while (str[j]) {
 
 			if (str[i] == str[j]) {
+				
 				visited = str[i];
 				count++;
 			}
@@ -210,6 +213,8 @@ void charFreq(char str[]) {
 		i++;
 	}
 }
+
+
 
 //Q14
 
