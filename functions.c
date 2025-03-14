@@ -112,3 +112,28 @@ void concat(char str1[], char str2[]) {
 	}
 	str1[i] = str2[j];
 }
+
+//Q9
+
+int strComp(char str1[], char str2[]) {
+
+
+	int i = 0;
+
+	int c = 0;
+	
+	while (str1[i]) {
+
+		int a = str1[i];
+		int b = str2[i];
+
+		c = a - b;
+		if (c == 0) {
+			i++;
+		}
+		else
+		{
+			return c;
+		}
+	}
+}

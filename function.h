@@ -34,3 +34,7 @@ void checkPalindrome(char copyCh[], char ch[]);
 //Q8
 
 void concat(char str1[], char str2[]);
+
+//Q9
+
+int strComp(char str1[], char str2[]);
