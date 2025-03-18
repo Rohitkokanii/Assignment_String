@@ -54,7 +54,13 @@ void displayPrintf(char arr2[]) {
 
 void copyString(char ch2[], char ch1[]) {
 
-	int i = 0;
+	int j = 0;
+	while (ch1[j]) {
+		ch2[j] = ch1[j];
+		j++;
+	}
+	ch2[j] = '\0';
+/* int i = 0;
 	while (ch1[i]) 
 		i++;
 	
@@ -63,6 +69,7 @@ void copyString(char ch2[], char ch1[]) {
 		ch2[j] = ch1[j];
 	j++;
 	}
+	*/
 }
 
 
@@ -188,6 +195,36 @@ int countSent(char str[]) {
 void charFreq(char str[]) {
 
 	int i = 0;
+	while (str[i]) {
+
+		char ch = str[i];
+		int temp = 0, count = 1;
+
+		int j = 0;
+		while (j < i) {
+			if (ch == str[j]) {
+				temp = 1;
+				break;
+			}
+			j++;
+		}
+
+		if (temp == 0) {
+			int k = i+1;
+			while (str[k]) {
+				
+				if (ch == str[k])
+					count++;
+				k++;
+			}
+
+			printf("\n %c Character Occurs %d times \n", ch, count);
+		}
+
+		i++;
+	}
+/*
+	int i = 0;
 
 
 	char visited = -1;
@@ -212,6 +249,8 @@ void charFreq(char str[]) {
 		printf("\n%c Occured %d times\n", str[i], count);
 		i++;
 	}
+
+	*/
 }
 
 
