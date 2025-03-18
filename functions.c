@@ -117,7 +117,7 @@ void concat(char str1[], char str2[]) {
 		j++;
 		i++;
 	}
-	str1[i] = str2[j];
+	str1[i] ='\0';
 }
 
 //Q9
@@ -164,7 +164,11 @@ int countWord(char str[]) {
 	int i = 0;
 	int countSpace = 1;
 	while (str[i]) {
-		if (str[i] == 32 &&str[i+1]>0) {
+		if (i == 0 && str[i] == 32) {
+			i++;
+			continue;
+		}
+		if (str[i] == 32 && str[i+1]>0 &&str[i+1]!=32) {
 			countSpace++;
 		}
 		i++;
@@ -181,7 +185,7 @@ int countSent(char str[]) {
 	int countSent = 0;
 	while (str[i]) {
 
-		if (str[i] == 46) {
+		if (str[i] == 46 || str[i] == '!' || str[i] == '?') {
 			countSent++;
 		}
 		i++;
